@@ -29,6 +29,24 @@ value_counts() – Counts the frequency of each category.
 
 print() – Displays the transformed dataset or output values.
 
+The following logic was applied to both the "Product" and "Food Delivery" datasets:
+
+Define the Data: Create a dictionary with numerical and textual fields and load it into a DataFrame.
+
+Define Bin Intervals: * Create a list for Bins (the numerical boundaries).
+
+Create a list for Labels (the names assigned to each bin).
+
+Apply Binning: Use the pd.cut() function to map continuous values into the defined categories.
+
+Format Text: Use the .str.upper() or .str.lower() methods to standardize string columns.
+
+Adjust Data Types: Use .astype() to convert columns (e.g., converting an integer Units_Sold to a float).
+
+Sort and Filter: Use sort_values() to organize the data based on specific criteria like sales volume or delivery time.
+
+Summarize: Use value_counts() to see the distribution of data across the newly created bins.
+
 Conclusion:
 
 Data Binning and Data Formatting operations using Python and the Pandas library were successfully performed.
